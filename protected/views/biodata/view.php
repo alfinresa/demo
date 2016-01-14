@@ -20,7 +20,8 @@ array('label'=>'Manage Biodata','url'=>array('admin')),
 	'attributes'=>array(
 		array(
 			'name'=>'photo',
-			'value'=>$model->photo,
+			'value'=>'<img src="'.Yii::app()->baseUrl . '/public/thumb/' . $model->photo .'"/>',
+			'type'=>'raw'
 		),
 		array(
 			'name'=>'nik',
